@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(27, 26, 26);
+}
+
+.tete {
+    height: 40vh;
+    background-color: rgb(255, 190, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     border-radius: 70%;
+}
+
+.boite {
+    display: flex;
+}
+
+.oeuil {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 20px;
+    box-shadow: 0  0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin-bottom:70px; 
+}
+
+.oeuil:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: translate(-50%,-50%);
+    border: 9px solid rgb(21, 157, 255);
+}
+
+.bouche {
+    height: 20px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(252, 111, 111);
+}
+
+.nezgauche {
+    background-color: rgb(200, 146, 107);
+    position: absolute;
+    top: 53%;
+    right: 50.1%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.nezdroite {
+    background-color: rgb(200, 146, 107);
+    position: absolute;
+    top: 53%;
+    left: 50.1%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
